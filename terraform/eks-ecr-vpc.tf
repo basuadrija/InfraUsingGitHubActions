@@ -1,5 +1,5 @@
 # VPC for Cluster
-
+#New file is added
 data "aws_availability_zones" "azs" {}
 
 module "vpc" {
