@@ -45,6 +45,11 @@ module "eks" {
 
   enable_cluster_creator_admin_permissions = true
 
+  cluster_encryption_config = {
+    resources        = ["secrets"]
+    provider_key_arn = "arn:aws:kms:ap-south-1:794038216301:alias/eks/githubactions-eks"
+  }
+
   cluster_addons = {
     coredns = {
       most_recent = true
