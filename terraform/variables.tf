@@ -5,11 +5,11 @@ variable "aws_region" {
 }
 
 variable "name" {
-  default = "githubactions-eks"
+  default = "githubactions-eks-java"
 }
 
 variable "ecr_repo" {
-  default = "gitops-webapp"
+  default = "githubactions-ecr-java"
 }
 
 variable "k8s_version" {
