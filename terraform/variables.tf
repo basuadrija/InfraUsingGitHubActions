@@ -1,4 +1,4 @@
-
+#this is the variable section
 variable "aws_region" {
   description = "AWS region"
   type        = string
