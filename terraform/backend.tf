@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    encrypt = true    b
+    encrypt = true
     bucket = "backendwithdynamodb"
     dynamodb_table = "terraform-state-lock-dynamo"
     key    = "terraform.tfstate"
